@@ -1,0 +1,62 @@
+
+ body, html {
+    height: 100%;
+    font-family:'Ruslan Display', cursive;
+}
+ 
+ .bg { 
+    background-image: url("../images/background.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+   color: white;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+  padding: 10px;
+}
+
+#directions{
+    color: white;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+p {
+    font-size: 25px
+}
+
+#random {
+background-color: purple;
+width: 200px;
+height: 200px;
+padding-left: 10px;
+margin-left: 50px;
+float: left;
+}
+
+#winslosses {
+    background-color: cyan;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 200px;
+    padding-left: 10px;
+
+}
+
+#totalscore {
+    background-color: lightsalmon;
+    width: 200px;
+    height: 180px;
+    margin-left: 600px;
+    padding: 10px;
+
+}
+
+

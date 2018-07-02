@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unit 4 Game</title>
+
+    <meta charset="utf-8" />
+    <!--Viewport for media queries-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Linking CSS reset-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--Linking CSS Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Linking Googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <!--Linking Javascript-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+    <div class="bg">
+        <container>
+            <br>
+            <header>Crystal Counter!</header>
+            <div id="directions">
+                <h1>Directions</h1>
+                <hr>
+                <p>You will be given a random number at the start of the game.</p>
+
+                <p>There are four crystals below. By clicking on a crystal, you will add a certain amount to your total score.</p>
+
+                <p>You win the game by matching your total score to the random number. You lose the game if your total score
+                    goes above the random number.</p>
+
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+
+                <p>Each time when the game starts the game will change fhte values of each crystal.</p>
+
+            </div>
+            <div class="numbers">
+                <div id="random">
+                    <p>Number to match:</p>
+                    <p id="random number"></p>
+                </div>
+
+                <div id="winslosses">
+                    <p>Wins:</p>
+                    <p id="wins"></p>
+                    <p>Losses:</p>
+                    <p id="losses"></p>
+                </div>
+            </div>
+
+
+            <div id="totalscore">
+                <p>Your total score is:</p>
+                <p id="score"></p>
+
+            </div>
+
+        </container>
+    </div>
+
+</body>
+
+</html>
