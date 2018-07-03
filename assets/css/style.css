@@ -1,7 +1,7 @@
 
  body, html {
     height: 100%;
-    font-family:'Ruslan Display', cursive;
+    font-family:'Eagle Lake', cursive;
 }
  
  .bg { 
@@ -25,38 +25,34 @@ header {
     color: white;
     padding-left: 50px;
     padding-right: 100px;
+    background-color: black;
+    background: linear-gradient(to right, black, purple);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 25px;
 }
 
 p {
-    font-size: 25px
+    font-size: 18px
 }
 
-#random {
+#random, #winslosses, #totalscore {
 background-color: purple;
-width: 200px;
-height: 200px;
+background: linear-gradient(purple, cyan);
+width: 180px;
+height: 180px;
 padding-left: 10px;
 margin-left: 50px;
 float: left;
+border-radius: 25px;
 }
 
-#winslosses {
-    background-color: cyan;
-    width: 200px;
-    height: 200px;
-    float: right;
-    margin-right: 200px;
-    padding-left: 10px;
 
-}
-
-#totalscore {
-    background-color: lightsalmon;
-    width: 200px;
-    height: 180px;
-    margin-left: 600px;
-    padding: 10px;
-
+img {
+    width: 130px;
+    height: 130px;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 

@@ -1,20 +1,19 @@
 
-  <!-- JAVASCRIPT  -->
-  <!-- ========================================= -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ //variables
 
-  <script type="text/javascript">
-
-  var targetNumber = 53;
-
-  $("#number-to-guess").text(targetNumber);
-
+  var randomNumber = 47;
+  var numberOptions =[15];
   var counter = 0;
+  var numberOptions = [10, 5, 2, 7];
+  
+ //user starts game with an click event.
+ 
 
-  // Now for the hard part. Creating multiple crystals each with their own unique number value.
+  $("#random-number").text(randomNumber);
 
-  // We begin by expanding our array to include four options.
-  var numberOptions = [10, 5, 3, 7];
+  $(".crystal-image").on("click", function() {
+
+
 
   // Next we create a for loop to create crystals for every numberOption.
   for (var i = 0; i < numberOptions.length; i++) {
@@ -28,18 +27,18 @@
     imageCrystal.addClass("crystal-image");
 
     // Each imageCrystal will be given a src link to the crystal image
-    imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+    imageCrystal.attr("src", "../images/crystal1.jpg", "../images/crystal2.jpg", "../images/crystal3.jpg", "../images/crystal4.jpg");
 
     // Each imageCrystal will be given a data attribute called data-crystalValue.
     // This data attribute will be set equal to the array value.
     imageCrystal.attr("data-crystalvalue", numberOptions[i]);
 
     // Lastly, each crystal image (with all it classes and attributes) will get added to the page.
-    $("#crystals").append(imageCrystal);
+    $("#crystal-image").append(imageCrystal);
   }
 
   // This time, our click event applies to every single crystal on the page. Not just one.
-  $(".crystal-image").on("click", function() {
+  $("#crystal-image").on("click", function() {
 
     // Determining the crystal's value requires us to extract the value from the data attribute.
     // Using the $(this) keyword specifies that we should be extracting the crystal value of the clicked crystal.
@@ -65,4 +64,3 @@
 
   });
 
-  </script>
