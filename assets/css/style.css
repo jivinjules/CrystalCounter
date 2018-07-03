@@ -21,6 +21,9 @@ header {
   padding: 10px;
 }
 
+h1 {
+    font-size: 30px;
+}
 #directions{
     color: white;
     padding-left: 50px;
@@ -42,6 +45,7 @@ background: linear-gradient(purple, cyan);
 width: 180px;
 height: 180px;
 padding-left: 10px;
+padding-top: 20px;
 margin-left: 50px;
 float: left;
 border-radius: 25px;

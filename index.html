@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Linking Googlefonts-->
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
-    <!--Linking Javascript-->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!--Linking jquery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -23,49 +23,67 @@
         <container>
             <br>
             <header>Crystal Counter!</header>
+            <br>
+            <br>
             <div id="directions">
+                <br>
                 <h1>Directions</h1>
                 <hr>
+                <br>
+                <br>
                 <p>You will be given a random number at the start of the game.</p>
-
+                <br>
                 <p>There are four crystals below. By clicking on a crystal, you will add a certain amount to your total score.</p>
-
+                <br>
                 <p>You win the game by matching your total score to the random number. You lose the game if your total score
                     goes above the random number.</p>
-
+                <br>
                 <p>The value of each crystal is hidden from you until you click on it.</p>
-
+                <br>
                 <p>Each time when the game starts the game will change the values of each crystal.</p>
-
+                <br>
+                <br>
             </div>
+            <br>
+            <br>
             <div class="numbers">
                 <div id="random">
                     <p>Number to match:</p>
+                    <br>
+                    <br>
                     <p id="random-number"></p>
                 </div>
 
                 <div id="winslosses">
                     <p>Wins:</p>
+                    <br>
                     <p id="wins"></p>
+                    <br>
+                    <br>
                     <p>Losses:</p>
+                    <br>
                     <p id="losses"></p>
                 </div>
 
                 <div id="totalscore">
                     <p>Your total score is:</p>
+                    <br>
+                    <br>
                     <p id="score"></p>
-                    
+
                 </div>
 
-                    <img id="crystal-image" src="assets/images/crystal1.jpg" alt="crystal1">
-                    <img id="crystal-image" src="assets/images/crystal2.jpg" alt="crystal2">
-                    <img id="crystal-image" src="assets/images/crystal3.jpg" alt="crystal3">
-                    <img id="crystal-image" src="assets/images/crystal4.jpg" alt="crystal4">
+                <img id="crystal1" src="assets/images/crystal1.jpg" alt="crystal1">
+                <img id="crystal2" src="assets/images/crystal2.jpg" alt="crystal2">
+                <img id="crystal3" src="assets/images/crystal3.jpg" alt="crystal3">
+                <img id="crystal4" src="assets/images/crystal4.jpg" alt="crystal4">
 
             </div>
-
+            
         </container>
     </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 
