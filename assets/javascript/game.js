@@ -72,7 +72,7 @@ $(document).ready(function () {
 
     //if the score exceeds the random number, initiate loss function
     else if (randomNumber < totalScore) {
-      losses();
+      loseGame();
     }
   });
 
